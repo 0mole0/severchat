@@ -4,7 +4,7 @@ const fs = require('fs')
 const app = express();
 
 
-let port = 3001;
+let port = process.env.PORT || 3001;
 
 const server = app.listen(port, function() { 
     console.log('server running on port 3001');
